@@ -15,7 +15,6 @@ RSpec.describe 'Home page features', type: :system do
     it 'has an email contact form' do
       visit root_path
 
-      save_and_open_page
       expect(page).to have_content("Name")
       expect(page).to have_field("name")
       expect(page).to have_content("Email")
