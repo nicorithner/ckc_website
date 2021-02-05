@@ -20,8 +20,10 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 3.35', '>= 3.35.3'
   gem 'figaro' # to hide the keys
+  gem 'launchy', '~> 2.5'
   gem 'pry'
   gem 'rspec-rails'
+  gem 'selenium-webdriver'
   gem 'simplecov'
 end
 

@@ -3,7 +3,7 @@ import React from 'react'
 class App extends React.Component {
 				render () {
 						return (
-										<div>
+										<div id="contact">
 											<label htmlFor="email"> Email </label>
 											<input type="email" placeholder="enter email address" name="email" />	
 											<label htmlFor="name"> Name </label>
