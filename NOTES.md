@@ -48,3 +48,9 @@ Response in pry:
  @template_id=nil,
  @tracking_settings=nil>
 
+##Errors and solutions
+
+  - Error: `zsh command not found: code`
+    Solution: `brew install --cask visual-studio-code`
+
+  - 

@@ -42,6 +42,10 @@ This site includes:
 			- Create test,
                 - Add `, type: :system` to the describe block ex. `RSpec.describe 'Home page features', type: :system do`
                 - If your machine returns an error '"chromedriver" cannot be opened because the developer cannot be verified' Open System Perferences > Security & Privacy, under the General tab. Click Open Anyway to allow chromedriver to run.
+			
+			- Create Poro test
+				- Add a spec/poros, then add spec/poros/contact_form_spec.rb.
+				- Create a poro test in the above folder and follow TDD.
 
 ### Gemfile
 
