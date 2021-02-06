@@ -10,8 +10,7 @@ class Form extends React.Component {
             success: ""   
         }
     }
-    validateSumbitted=() => {
-        console.log("I was clicked")
+    validateSubmitted=() => {
         if(!this.state.name){
             this.setState({error: "Name cannot be left blank."})
         } else if(!this.state.email){
