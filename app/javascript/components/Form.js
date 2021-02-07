@@ -21,6 +21,7 @@ class Form extends React.Component {
             this.setState({ error: "Message cannot be left blank."})
         } else {
             this.setState({success: "Thank you for contacting us!"})
+            this.clearInputs()
         }
     }
 
@@ -29,6 +30,14 @@ class Form extends React.Component {
         this.setState({ [name]: value });
     }
 
+    clearInputs = () => {
+        this.setState({
+            name: "",
+            email: "",
+            message: "",
+        })
+    }
+    
     render() {
         return(
             <div id="contact">
