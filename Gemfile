@@ -6,6 +6,7 @@ gem 'rails', '~> 6.1.1'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'jbuilder', '~> 2.7'
+gem 'mail_form', '~> 1.9'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'sass-rails', '>= 6'
@@ -20,8 +21,10 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 3.35', '>= 3.35.3'
   gem 'figaro' # to hide the keys
+  gem 'launchy', '~> 2.5'
   gem 'pry'
   gem 'rspec-rails'
+  gem 'selenium-webdriver'
   gem 'simplecov'
 end
 
