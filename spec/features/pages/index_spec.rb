@@ -43,7 +43,6 @@ RSpec.describe 'Home page features', type: :system do
       fill_in 'message', with: "Hello World!"
 
       click_on "Submit"
-      save_and_open_page
       expect(current_path).to eq(root_path)
       expect(page).to have_content("Email cannot be left blank.")
     end
