@@ -1,4 +1,5 @@
 import React from 'react'
+import './form.css'
 
 class Form extends React.Component {
     constructor() {
@@ -40,16 +41,24 @@ class Form extends React.Component {
     
     render() {
         return(
-            <div id="contact">
+            <div className="container">
+
                 {this.state.error && <h2>{this.state.error}</h2>}
                 {this.state.success && <h2>{this.state.success}</h2>}
-                <label htmlFor="email"> Email </label>
-                <input type="email" placeholder="enter email address" name="email" value={this.state.email} onChange={this.handleChange} />
-                <label htmlFor="name"> Name </label>
-                <input type="text" placeholder="enter name" name="name" value={this.state.name} onChange={this.handleChange} />
-                <label htmlFor="message"> Message </label>
-                <textarea placeholder="enter your message here" name="message" rows="4" value={this.state.message} onChange={this.handleChange} />
-                <button type="button" onClick={this.validateSubmitted}>Submit </button>
+
+                <h1>Contact Us</h1>
+
+                    <label htmlFor="name"> Name </label><br/>
+                    <input type="text" placeholder="enter name" name="name" value={this.state.name} onChange={this.handleChange} />
+
+                    <label htmlFor="email"> Email </label><br/>
+                    <input type="email" placeholder="enter email address" name="email" value={this.state.email} onChange={this.handleChange} />
+
+                    <label htmlFor="message"> Message </label><br/>
+                    <textarea placeholder="enter your message here" name="message" rows="4" value={this.state.message} onChange={this.handleChange} />
+
+                    <button type="button" onClick={this.validateSubmitted}>Submit </button>
+
             </div>
         )
     }
