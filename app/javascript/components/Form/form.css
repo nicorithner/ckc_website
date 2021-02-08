@@ -1,0 +1,43 @@
+.container {
+  width: 30%;
+  height: auto;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+
+.container h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.container input, textarea {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container input[type="text"], input[type="email"], textarea {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container button[type="button"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+}
