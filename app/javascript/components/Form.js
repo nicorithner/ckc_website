@@ -18,7 +18,7 @@ class Form extends React.Component {
         } else if(!this.state.message){
             this.setState({ error: "Message cannot be left blank."})
         } else {
-            this.setState({success: "Thank you for contacting us!"})
+            this.setState({success: "Thank you for contacting us!", error: ""})
         }
     }
     render() {
