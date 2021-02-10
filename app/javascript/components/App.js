@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header/Header';
 import Form from './Form/Form.js';
 
-import './app.css';
+import './app.scss';
 
 class App extends React.Component {
 	render() {
