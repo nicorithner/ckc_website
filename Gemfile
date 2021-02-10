@@ -6,7 +6,6 @@ gem 'rails', '~> 6.1.1'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'jbuilder', '~> 2.7'
-gem 'jsonapi-serializer', '~> 2.1'
 gem 'mail_form', '~> 1.9'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
