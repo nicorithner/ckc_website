@@ -1,6 +1,9 @@
 import React from 'react';
 import './form.css';
 
+import { loadReCaptcha } from 'react-recaptcha-v3'
+import Recaptcha from '../Recaptcha/Recaptcha';
+
 import { sendContactMail } from '../../utils/apiCalls';
 class Form extends React.Component {
 	constructor() {
@@ -12,6 +15,10 @@ class Form extends React.Component {
 			error: '',
 			success: '',
 		};
+	}
+	
+	componentDidMount() {
+		loadReCaptcha("6LdWODIaAAAAAMdOsIw0f1SgKXCsBOlQL7EsiiCg");
 	}
 
 	validateSubmitted = () => {
@@ -89,6 +96,8 @@ class Form extends React.Component {
 					value={this.state.message}
 					onChange={this.handleChange}
 				/>
+
+				<Recaptcha />
 
 				<button type='button' onClick={this.validateSubmitted}>
 					Submit{' '}
