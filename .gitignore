@@ -34,8 +34,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-.ruby-version
-Gemfile.lock
 
 # Ignore application configuration
 /config/application.yml
