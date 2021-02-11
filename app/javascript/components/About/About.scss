@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   width: 100%;
   padding: 4rem;
   color: white;
@@ -19,19 +18,20 @@
     font-size: 1.2rem;
 
     .about-info-left, .about-info-right {
-      padding: 0 1.5rem;
+      padding: 0 2.5rem;
     }
 
     .about-info-left {
       width: 40%;
       border-right: 1px solid #fff;
+      padding-left: 10%;
 
       h3 {
         margin-bottom: 2rem;
       }
 
-      ol {
-        padding: 0 2.5rem;
+      ul {
+        padding: 0 2rem;
         
         li {
           line-height: 2rem;
