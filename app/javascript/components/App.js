@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Header from './Header/Header';
-import Form from './Form/Form.js';
+import Form from './Form/Form';
+import About from './About/About';
 
 import './app.scss';
 
@@ -12,6 +13,9 @@ class App extends React.Component {
 				<section className='page-container'>
 					<Header />
 					<Form />
+				</section>
+				<section className="about-container">
+					<About />
 				</section>
 			</section>
 		);
