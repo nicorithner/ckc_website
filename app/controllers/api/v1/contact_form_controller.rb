@@ -9,6 +9,6 @@ protect_from_forgery with: :null_session, only: [:create]
         email = params[:email]
         message = params[:message]
         Sendgrid.send_mail(name, email, message)
-        redirect_to root_path, status: :created
+        # redirect_to root_path, status: :created
     end
 end
