@@ -8,10 +8,10 @@ const About = () => (
     <section className="about-info">
       <article className="about-info-left">
         <h3>Kettlebell Endurance Sports</h3>
-        <ol>
+        <ul>
           <li>BOLT</li>
           <li>Russian Kettlebell Sport</li>
-        </ol>
+        </ul>
       </article>
       <article className="about-info-right">
         <p>All levels are welcomed!</p>
