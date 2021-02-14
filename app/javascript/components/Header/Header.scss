@@ -29,6 +29,32 @@ header {
 		padding: 5px;
 		background: #fb2525;
 		color: #fff;
-		box-shadow: 3px 3px 3px rgba(26, 26, 26, 0.695);
+		box-shadow: 1px 1px 1px rgba(26, 26, 26, 0.695);
 	}
+}
+
+.toggle-button {
+	position: absolute;
+	top: .75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background: white;
+	border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+
+	.toggle-button {
+		display: flex;
+	}
+
 }
