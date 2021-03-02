@@ -8,7 +8,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'jbuilder', '~> 2.7'
 gem 'mail_form', '~> 1.9'
 gem 'pg', '~> 1.1'
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 5.2.2'
 gem 'sass-rails', '>= 6'
 gem 'sendgrid-ruby', '~> 6.3', '>= 6.3.9'
 gem 'turbolinks', '~> 5'
